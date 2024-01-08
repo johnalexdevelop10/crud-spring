@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio</title>
+</head>
+<body>
+<h1>Mis Contactos</h1>
+<table>
+<thead>
+<tr>
+    <th>ID</th>
+    <th>NOMBRE</th>
+    <th>FECHA NACIMIENTO</th>
+    <th>FECHA REGISTRO</th>
+    <th></th>
+
+</tr>
+</thead>
+    <tbody>
+    <tr th:each="contacto : ${contactos}">
+     <td th:text="${contacto.id}"> </td>
+        <td th:text="${contacto.nombre}"> </td>
+        <td th:text="${contacto.fechaNacimiento}"> </td>
+        <td th:text="${contacto.fechaRegistro}"> </td>
+    </tr>
+    </tbody>
+
+</table>
+</body>
+</html>
